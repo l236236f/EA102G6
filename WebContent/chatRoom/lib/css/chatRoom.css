@@ -1,0 +1,869 @@
+@charset "BIG5";
+#odiv div{
+	color:black;
+}
+
+#odiv *{
+ box-sizing: content-box;
+}
+
+
+.messageTextArea div{
+	
+	width:100%;
+	
+}
+.messageTextArea br{
+
+	
+}
+
+
+#chatrbutton *{
+ box-sizing: content-box;
+}
+
+#odiv .leftbutton .fas{
+	pointer-events: none;
+}
+#odiv h1{
+	font-size:15px;
+	margin:10px;
+	font-weight:bold;
+}
+
+#odiv {
+	height: 500px;
+	position: fixed;
+	bottom: 75px;
+	right: 20px !important;
+	background: #004B97;
+	min-height: 300px;
+	border: 8px solid #004B97;
+	border-radius: 20px;
+	opacity: 0;
+	min-width: 300px;
+	box-shadow: 0 8px 15px 1px black;
+	transform: scale(0);
+	z-index: 20;
+}
+
+#odiv .t, #odiv .b, #odiv .l, #odiv .r {
+	position: absolute;
+	z-index: 1;
+	background: #004B97;
+}
+
+#odiv .l, #odiv .r {
+	width: 4px;
+	height: 100%;
+	cursor: col-resize;
+	opacity: 0;
+}
+
+#odiv .t, #odiv .b {
+	width: 100%;
+	height: 4px;
+	cursor: row-resize;
+	opacity: 0;
+}
+
+#odiv .t {
+	top: -10px;
+}
+
+#odiv .b {
+	bottom: -10px;
+}
+
+#odiv .l {
+	left: -10px;
+}
+
+#odiv .r {
+	right: -10px;
+}
+
+#odiv .tl, #odiv .bl, #odiv .br, #odiv .tr {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	opacity: 0;
+	z-index: 0;
+	cursor: nwse-resize;
+}
+
+#odiv .tl, #odiv .bl {
+	left: -15px;
+}
+
+#odiv .tr, #odiv .br {
+	right: -15px;
+}
+
+#odiv .br, #odiv .bl {
+	bottom: -15px;
+}
+
+#odiv .tl, #odiv .tr {
+	top: -15px;
+}
+
+#odiv .tr, #odiv .bl {
+	cursor: nesw-resize;
+}
+
+#odiv div[name='header'] {
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	top: 2px;
+	background: #004B97;
+}
+
+#odiv div[name='leftbuttonout'] {
+	margin-left: 5px;
+	width: 35px;
+	height: 100%;
+}
+
+#odiv div[name='leftbutton'] {
+    position: relative;
+    width: 50px;
+    height: 50px;
+	line-height:0;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    
+}
+
+#odiv div[name='footer'] {
+	width: calc(100% + 10px);
+	position: absolute;
+	left: -5px;
+	height: 70px;
+	bottom: 2px;
+	background-color: #004B97;
+	border-top: 1px solid black;
+}
+
+#odiv div[name='footer'] .t {
+	position: absolute;
+	top: -5px;
+	float: left;
+	width: 100%;
+	height: 5px;
+	cursor: row-resize;
+}
+
+#odiv div[name='uploadfile'] {
+	position: absolute;
+	bottom: 0;
+	width: 35px;
+	margin-left: 5px;
+	height: 100%;
+	background: #004B97;
+	font-size: 40px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	color: white;
+}
+
+#odiv div[name='uploadfile'] .upfilebutton {
+	position: absolute;
+	left: -5px;
+	width: 40px;
+	height: 60px;
+	cursor: pointer;
+	opacity: 0;
+	font-size: 0;
+}
+
+#odiv div[name='uploadfile'] a {
+	float: left;
+}
+
+#odiv .textarea {
+	position: absolute;
+	top: 5px;
+	left: 45px;
+	right: 95px;
+	width: auto;
+	min-height: 100%;
+	background-color: #3b9dff;
+	font-size: 20px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border-width: 2px;
+	outline: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#odiv .textarea img {
+	max-width: 200px;
+	max-height: 200px;
+}
+
+#odiv .close {
+	opacity:1;
+	width: 35px;
+	height: 100%;
+	background-color: #004B97;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+#odiv .close div {
+	width: 100%;
+	height: 10px;
+	background: white;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+#odiv div[name='submit'] {
+	position: absolute;
+	right: 15px;
+	top: 0px;
+	height: 100%;
+	width: 35px;
+	background-color: #004B97;
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+#odiv .title {
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+	height: 100%;
+	top: 0px;
+	width: auto;
+	position: absolute;
+	left: 45px;
+	right: 40px;
+	background-color: #004B97;
+	line-height: 30px;
+	font-size: 20px;
+	overflow: hidden;
+	font-family: "微軟正黑體";
+	color: white;
+}
+
+#chatrbutton {
+	position: fixed;
+	width: 70px;
+	height: 70px;
+	border-radius: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	right: 10px;
+	bottom: 10px;
+	box-shadow: 2px 6px 5px 2px #8E8E8E;
+	z-index: 9999;
+}
+
+#chatrbutton div[name='chatrbutton'] {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	font-size: 60px;
+	line-height: 60px;
+	text-align: center;
+	user-select: none;
+	color: #0072E3;
+}
+
+#chatrbutton .message {
+	position: absolute;
+	right: -8px;
+	top: -5px;
+	float: right;
+	background-color: #FF0000;
+	min-width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	z-index: 2;
+	border: white 4px solid;
+	line-height: 25px;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	font-family: "微軟正黑體";
+	visibility: hidden;
+}
+
+#odiv .leftlColumn {
+	position: absolute;
+	left: -5px;
+	height: 100%;
+	width: 0px;
+	background-color: white;
+	z-index: 9;
+	margin-top: 2px;
+	border-color: #6A6AFF;
+	border-width: 2px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	opacity: 0.95;
+	overflow: hidden;
+}
+
+#odiv div[name='inner'] {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 50px;
+	min-height: 100px;
+	background-color: white;
+	box-shadow: 0 1px 5px 1px black;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+#odiv ::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+#odiv ::-webkit-scrollbar-thumb {
+	border-radius: 100px;
+	-webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+	background: rgba(0, 120, 255, 0.4);
+}
+
+#odiv ::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+	border-radius: 0;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+#odiv .search {
+	position: absolute;
+	right: 5px;
+	left: 10px;
+	width: auto;
+	height: 30px;
+	overflow: hidden;
+	background: #2828FF;
+	margin-top: 5px;
+	border: 2px solid #66B3FF;
+}
+
+#odiv .search .icon {
+	position: absolute;
+	float: left;
+	width: 30px;
+	left: 0px;
+	height: 30px;
+	background: white;
+	text-align: center;
+	
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	cursor: pointer;
+}
+
+#odiv .hoverIcon {
+	filter: brightness(70%);
+	cursor: pointer;
+}
+
+#odiv .hoverIcon:hover {
+	filter: brightness(100%);
+}
+
+#odiv .search .record {
+	position: absolute;
+	float: left;
+	width: 40px;
+	right: 35px;
+	height: 30px;
+	background: #019858;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	border: 2px white solid;
+	border-radius: 1px;
+	box-sizing: border-box;
+	font-family: "微軟正黑體";
+	font-size: 12px;
+	text-align: center;
+	line-height: 25px;
+	color: white;
+}
+
+#odiv .search .client {
+	position: absolute;
+	float: left;
+	width: 40px;
+	right: 0px;
+	height: 30px;
+	background: #00BB00;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	border: 2px white solid;
+	border-radius: 1px;
+	box-sizing: border-box;
+	font-family: "微軟正黑體";
+	font-size: 12px;
+	text-align: center;
+	line-height: 25px;
+	color: white;
+}
+
+#odiv .searchinput {
+	left: 5px;
+	padding-left: 45px;
+	height: 30px;
+	border-style: inset;
+	border: 1px blue;
+	width: 260px;
+	outline: rgba(255, 0, 0, 3);
+}
+
+#odiv .leftList {
+	padding-top: 10px;
+	position: absolute;
+	top: 45px;
+	margin-left: 10px;
+	width: calc(100% - 20px);
+	height: calc(100% - 40px);
+	overflow: scroll;
+}
+
+#odiv .leftList::-webkit-scrollbar {
+	display: none;
+}
+
+#odiv .leftListButton {
+	width: 100%;
+	height: 70px;
+	background: white;
+	border: 1px solid #F0F0F0;
+	display: flex;
+	align-items: center;
+	/* box-shadow:  0 1px 1px 1px black; */
+	border-radius: 2px;
+}
+
+#odiv .leftListButton .userphoto {
+	float: left;
+	margin-left: 8px;
+	width: 56px;
+	height: 56px;
+	border-radius: 56px;
+	background: white;
+	overflow: hidden;
+	border:1px solid #c0c0c0;
+}
+
+#odiv .leftList .leftListButton .messageButtun {
+	height: 70px;
+	position: absolute;
+	left: 64px;
+	right: 32px;
+	background: white;
+	line-height: 2px;
+	padding-left: 8px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#odiv img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#odiv .clientBox img, #odiv .title img , #odiv .userphoto img {
+	max-height:none;
+	min-height:100%;
+}
+
+#odiv .leftList .leftListButton .messageNumber {
+	position: absolute;
+	right: 5px;
+	background: #00BB00;
+	min-width: 20px;
+	height: 14px;
+	border-radius: 15px;
+	overflow: hidden;
+	text-align: center;
+	line-height: 14px;
+	font-size: 8px;
+	color: white;
+	padding: 2px;
+	letter-spacing: 0.5px;
+	font-family: "微軟正黑體";
+}
+
+#odiv .leftList .leftListButton h1 {
+	font-size: 100% ;
+	font-family: "微軟正黑體";
+}
+
+#odiv .leftList .leftListButton p {
+	    line-height: 10px;
+    font-size: 18px;
+    font-family: "微軟正黑體";
+    color: #4F4F4F;
+   
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+/*     overflow:hidden; */
+    width: 140px;
+    height: 40px;
+ 
+    padding-left: 10px;
+
+}
+#odiv .leftList .leftListButton p br{
+	display:none;
+}
+
+#odiv div[name='inner'] .messageblockSelf {
+	margin-top: 5px;
+	flex-direction: row-reverse;
+	background: white;
+	height: auto;
+	display: flex;
+	align-content: flex-end;
+	align-items: flex-end;
+	justify-content: flex-start;
+	word-break: break-all;
+	margin: 7px 0px;
+}
+
+#odiv div[name='inner'] .messageblockOther {
+	margin-top: 5px;
+	width: 100%;
+	flex-direction: row;
+	background: white;
+	height: auto;
+	display: flex;
+	align-content: flex-end;
+	align-items: flex-end;
+	justify-content: flex-start;
+	word-break: break-all;
+	margin: 7px 0px;
+}
+
+#odiv div[name='inner'] .userphoto {
+	display: flex;
+	width: 56px;
+	height: 56px;
+	border-radius: 56px;
+	min-width: 56px;
+	overflow: hidden;
+	order: 1;
+	align-self: flex-start;
+	border:1px solid #c0c0c0;
+}
+
+#odiv div[name='inner'] .messagetime {
+	display: flex;
+	background: white;
+	min-width: 70px;
+	height: 50px;
+	font-size: 12px;
+	font-family: "微軟正黑體";
+	order: 3;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+#odiv div[name='inner'] .messageTextArea {
+	display: flex;
+	position: relative;
+	background: #79FF79;
+	width: auto;
+	height: auto;
+	border-radius: 15px;
+	font-size: 20px;
+	order: 2;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	max-width: 400px;
+	padding: 7px;
+}
+
+#odiv div[name='inner'] .messageTextArea br{
+	line-height: 0px;
+}
+
+
+
+
+#odiv .messageblockSelf .messageTextArea {
+	margin-right: 20px;
+}
+
+#odiv .messageblockOther .messageTextArea {
+	margin-left: 20px;
+}
+
+#odiv .messageblockOther .messageTextArea:before {
+	content: '';
+	position: absolute;
+	right: calc(100% - 5px);
+	top: -12px;
+	width: 30px;
+	height: 30px;
+	border-width: 0;
+	border-style: solid;
+	border-color: transparent;
+	border-bottom-width: 15px;
+	border-bottom-color: currentColor;
+	border-radius: 0 0 0 50px;
+	color: #79FF79;
+}
+
+#odiv .messageblockSelf .messageTextArea:before {
+	position: absolute;
+	content: '';
+	left: calc(100% - 5px);
+	top: -12px;
+	width: 30px;
+	height: 30px;
+	border-width: 0;
+	border-style: solid;
+	border-color: transparent;
+	border-bottom-width: 15px;
+	border-bottom-color: currentColor;
+	border-radius: 0 0 50px 0;
+	color: #79FF79;
+}
+
+#odiv div[name='inner'] p, #odiv div[name='inner'] a {
+	height: auto;
+	min-width: 100%;
+	width: 100%;
+	word-break: break-all;
+	line-height: 0;
+}
+
+#odiv div[name='inner'] a, #odiv .messageblockSelf p {
+	text-align: right;
+}
+
+#odiv div[name='inner'] .messageblockOther a, #odiv .messageblockOther p
+	{
+	text-align: left;
+}
+
+#odiv .messagetime a {
+	line-height: 0;
+}
+
+#odiv .messagetime p {
+	margin-top:15px;
+	font-size:12px;
+}
+#odiv .title p{
+	font-size:20px;
+	color:white;
+	line-height:30px;
+	margin-top:15px;
+}
+#odiv .photo {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	overflow: hidden;
+	margin-right: 5px;
+	margin-left: -8px;
+}
+
+#odiv .title .photo {
+	visibility: hidden;
+	border:1px solid #c0c0c0;
+}
+
+#odiv .emoji-picker-icon {
+	position: absolute;
+	top: calc(50% - 17.5px);
+	right: 55px;
+	font-size: 35px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+#odiv .messageblockOther .messagetime p {
+	text-align: left;
+}
+
+#odiv .leftlColumn .clientBox{
+	   float: left;
+    position: absolute;
+    background-color: white;
+    width: 280px;
+    height: calc(100% - 50px);
+    top: 50px;
+    left: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display:none;
+        z-index: 1;
+}
+
+.messageButtun div{
+	display:none;
+}
+#odiv .video{
+    position: absolute;
+    float: right;
+    width: 50px;
+    height: 50px;
+cursor:pointer;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color:white;
+	
+}
+
+#odiv .videoBox{
+	display: flex;
+    position: absolute;
+    background-color: black;
+    height: calc(100% - 50px);
+    width: 90%;
+    top: 50px;
+    margin: 0 5% 0 5%;
+    z-index: 501;
+    border-radius: 10px;
+    flex-direction: column-reverse;
+  
+}
+
+#odiv .videoBox .localVideo{
+	position:absolute;
+	display: flex;
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    align-self: flex-end;
+}
+
+
+#odiv .closeVideo{
+	color: white ;
+    width: 50px;
+    height: 50px;
+    float: right;
+   font-size:50px;
+    align-self: flex-end;
+opacity: 0.7;
+  z-index:5;
+    position: absolute;
+    top: 0;
+
+}
+
+#odiv .closeVideo:hover ,#odiv .minusChildVideo:hover{
+	opacity:1.0;
+}
+
+#odiv .minusChildVideo{
+	
+	position: absolute;
+    width: 25px;
+    background-color: #000040;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    right: 0;
+    opacity: 0.7;
+    z-index:5;
+    border-radius:5px;
+}
+#odiv video{
+	width:100%;
+	height:100%;
+		
+}
+#remote-video{
+	position:absolute;
+	z-index:1;
+}
+#local-video{
+	position:absolute;
+	z-index:2;
+}
+#odiv .checkStream{
+	    background-color: white;
+    width: 240px;
+    height: 160px;
+    position: absolute;
+    z-index: 502;
+    display: flex;
+    top: calc( 50% - 100px);
+    left: calc( 50% - 120px);
+    border: 2px solid black;
+    border-radius: 20px;
+    opacity: 0.9;
+    background: cornsilk;
+	
+}
+
+#odiv .checkStream .checkStreamText{
+	
+	position: absolute;
+    top: 20px;
+    left: 20px;
+    max-width: 200px;
+    text-align: center;
+    max-height: 80px;
+    word-break: break-all;
+    overflow: hidden;
+    font-size: 18px;
+}
+#odiv .checkStream .receptStream{
+	
+	position: absolute;
+    top: 90px;
+    left: 40px;
+    font-size: 50px;
+    color: green;
+    cursor:pointer;
+}
+
+#odiv .checkStream .rejectStream{
+	
+	position: absolute;
+    top: 90px;
+    left: 150px;
+    font-size: 50px;
+    color: red;
+      cursor:pointer;
+}
+

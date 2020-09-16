@@ -1,0 +1,291 @@
+
+/* benner area */
+div#benner_bg {
+	background-size: cover;
+	background-position: center center;
+	padding: 160px 0;
+	background-repeat: no-repeat;
+	filter: brightness(0.9);
+}
+
+div#benner_bg h3 {
+	font-size: 50px;
+	color: #fff;
+	font-weight: 900;
+	margin-bottom: 0;
+	font-family: microsoft jhenghei;
+	text-transform: capitalize;
+}
+
+.add_section-padding {
+	padding-top: 80px;
+	padding-bottom: 100px;
+}
+
+/* line 515, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_elements.scss */
+.single-input {
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	border: none;
+	outline: none;
+	background: #f9f9ff;
+	padding: 0 20px;
+	border-radius: 10px;
+}
+
+/* line 523, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_elements.scss */
+.single-input:focus {
+	outline: none;
+}
+
+/* line 528, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_elements.scss */
+.input-group-icon {
+	position: relative;
+}
+
+/* line 530, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_elements.scss */
+.input-group-icon .icon {
+	position: absolute;
+	left: 20px;
+	top: 0;
+	line-height: 60px;
+	z-index: 3;
+}
+
+/* line 535, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_elements.scss */
+.input-group-icon .icon i {
+	color: #797979;
+	font-size: 20px;
+}
+
+/* line 540, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_elements.scss */
+.input-group-icon .single-input {
+	padding-left: 56px;
+}
+
+/* line 545, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_elements.scss */
+.single-textarea {
+	display: block;
+	width: 100%;
+	line-height: 40px;
+	border: none;
+	outline: none;
+	background: #f9f9ff;
+	padding: 0 20px;
+	height: 420px;
+	resize: none;
+	border-radius: 10px;
+}
+
+/* line 555, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_elements.scss */
+.single-textarea:focus {
+	outline: none;
+}
+
+/* line 1042, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_elements.scss */
+.form-select {
+	height: 40px;
+	width: 100%;
+}
+
+/* line 1086, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_elements.scss */
+.mt-10 {
+	margin-top: 30px;
+}
+
+/* line 1089, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_elements.scss */
+.section-top-border {
+	padding: 50px 0;
+	border-top: 1px dotted #eee;
+}
+
+/* line 1093, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_elements.scss */
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.add_row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col-lg-7.col-md-7 {
+	margin-left: -30px;
+}
+
+.col-lg-5.col-md-5 {
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+.gat_div {
+	position: relative;
+	filter: drop-shadow(2px 4px 6px black);
+}
+
+.gat_div .head_icon {
+	position: absolute;
+	left: 430px;
+	line-height: 60px;
+	z-index: 3;
+}
+
+.gat_div .head_icon i {
+	font-size: 60px;
+	color: #ffffff;
+}
+
+.gat_div .gat_header {
+	padding-left: 70px;
+}
+
+.gat_header {
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	border: none;
+	outline: none;
+	padding: 0 20px;
+	font-family: microsoft jhengHei;
+	font-weight: bold
+}
+
+.gat_add_btn {
+	margin-top: 30px;
+    display: inline-block;
+    width: fit-content;
+    margin-right: 10px;
+}
+
+.gat_add_btn .submit_btn {
+	background: #9E9E9E;
+    width: 108px;
+    height: 41px;
+    border: 1px solid #9E9E9E;
+    border-radius: 5px;
+    color: white;
+}
+
+.gat_add_btn .submit_btn:hover {
+	background: transparent;
+    color: #9E9E9E;
+    border: 1px solid #9E9E9E;
+}
+.magicbtn-wrapper{
+	display: inline-block;
+}
+.magicbtn-wrapper #magicbtn{
+	border: 1px solid #9E9E9E;
+    background-color: #9E9E9E;
+    border-radius: 5px;
+    line-height: 39px;
+    width: 39px;
+    text-align: center;
+    color: white;
+}
+#magicbtn:hover {
+	background: transparent;
+    color: #9E9E9E;
+    border: 1px solid #9E9E9E;
+    cursor: pointer;
+}
+
+.btn-info {
+	color: #fff;
+	background-color: #17a2b8;
+	border-color: #17a2b8;
+	margin-bottom: 20px;
+}
+
+.input-group-icon.gatPhoto {
+	margin-top: 20px;
+}
+
+.input-group-icon.gatMap {
+	margin-bottom: 15px;
+	border-bottom: 2px solid #f1f1f1;
+	position: relative;
+}
+
+#map {
+	margin-bottom: 25px;
+	width: 100%;
+	height: 300px;
+	z-index: 2;
+}
+
+#panel {
+	position: absolute;
+	z-index: 6;
+	right: 60px;
+	top: 14px;
+}
+
+.panel-input {
+	line-height: 32px;
+	border: none;
+	outline: none;
+	background: #f9f9ffbf;;
+}
+
+.input-group-icon.gatside {
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.gatside .iconside {
+	font-size:
+}
+
+.iconside .fa-location-arrow {
+	font-size: 20px;
+	margin-right: 7px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+.errorMsgs{
+	position: absolute;
+	right:0;
+	color: red;
+}
+.type_select{
+	appearance:none;
+	background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(25px + 2px),
+    calc(100% - 15px) calc(25px + 2px),
+    calc(100% - 2.5em) 17px;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+.type_select:focus{
+	appearance:none;
+	 background-image:
+    linear-gradient(45deg, gray 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, gray 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 15px) 25px,
+    calc(100% - 20px) 25px,
+    calc(100% - 2.5em) 17px;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}

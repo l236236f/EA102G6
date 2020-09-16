@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="false">
+
+	<display-name>EA102G6</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+<!-- websocket -->
+<!-- 	<context-param> -->
+<!-- 	    <param-name>org.apache.tomcat.websocket.textBufferSize</param-name> -->
+<!-- 	    <param-value>307200</param-value> -->
+<!--   	</context-param> -->
+<!-- websocket -->
+
+<!-- DataSource -->
+   <resource-ref>
+		<description>DB Connection</description>
+		<res-ref-name>jdbc/EA102G6</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+<!-- DataSourceEnd -->
+
+<!-- Mem -->
+	<servlet>
+		<servlet-name>MemServlet</servlet-name>
+		<servlet-class>com.mem.controller.MemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MemServlet</servlet-name>
+		<url-pattern>/front-end/mem/mem.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PetServlet</servlet-name>
+		<servlet-class>com.pet.controller.PetServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PetServlet</servlet-name>
+		<url-pattern>/front-end/pet/pet.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PetDailyServlet</servlet-name>
+		<servlet-class>com.petDaily.controller.PetDailyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PetDailyServlet</servlet-name>
+		<url-pattern>/front-end/petDaily/petDaily.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DailyPhotoServlet</servlet-name>
+		<servlet-class>com.dailyPhoto.controller.DailyPhotoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DailyPhotoServlet</servlet-name>
+		<url-pattern>/front-end/dailyPhoto/dailyPhoto.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>VendorServlet</servlet-name>
+		<servlet-class>com.vendor.controller.VendorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VendorServlet</servlet-name>
+		<url-pattern>/front-end/vendor/vendor.do</url-pattern>
+	</servlet-mapping>
+<!-- MemEnd -->
+
+<!-- back -->
+	<servlet>
+		<servlet-name>EmpServlet</servlet-name>
+		<servlet-class>EMPLOYEE.controller.EmpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmpServlet</servlet-name>
+		<url-pattern>/back-end/emp/emp.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>QAServlet</servlet-name>
+		<servlet-class>QA.controller.QAServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QAServlet</servlet-name>
+		<url-pattern>/back-end/emp/qa.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>QAServletF</servlet-name>
+		<servlet-class>QA.controller.QAServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QAServletF</servlet-name>
+		<url-pattern>/front-end/qa.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ANNServlet</servlet-name>
+		<servlet-class>ANNOUNCEMENT.controller.ANNServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ANNServlet</servlet-name>
+		<url-pattern>/back-end/emp/ann.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AUTHOServlet</servlet-name>
+		<servlet-class>AUTHORITY.controller.AUTHOServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AUTHOServlet</servlet-name>
+		<url-pattern>/back-end/emp/autho.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CHATIMGServlet</servlet-name>
+		<servlet-class>CHATIMG.controller.CHATIMGServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CHATIMGServlet</servlet-name>
+		<url-pattern>/chatRoom/chatimg.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>chatImg</servlet-name>
+		<servlet-class>CHATIMG.controller.CHATIMGImg</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>chatImg</servlet-name>
+		<url-pattern>/chatRoom/chatImg</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>EmpImg</servlet-name>
+		<servlet-class>EMPLOYEE.controller.EmpImg</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmpImg</servlet-name>
+		<url-pattern>/back-end/emp/Img</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ANNImg</servlet-name>
+		<servlet-class>ANNOUNCEMENT.controller.ANNImg</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ANNImg</servlet-name>
+		<url-pattern>/back-end/emp/ANNImg</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>NameServlet</servlet-name>
+		<servlet-class>idv.david.websocketchat.controller.NameServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NameServlet</servlet-name>
+		<url-pattern>/chatRoom/chat.do</url-pattern>
+	</servlet-mapping>
+<!-- backEnd -->
+
+<!-- gat -->
+	<servlet>
+		<servlet-name>GatServlet</servlet-name>
+		<servlet-class>com.gat.controller.GatServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GatServlet</servlet-name>
+		<url-pattern>/front-end/gat/gat.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GatDetailServlet</servlet-name>
+		<servlet-class>com.gat_detail.controller.GatDetailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GatDetailServlet</servlet-name>
+		<url-pattern>/front-end/gat/gatdetail.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RepGatServlet</servlet-name>
+		<servlet-class>com.rep_gat.controller.RepGatServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RepGatServlet</servlet-name>
+		<url-pattern>/back-end/report/repgat.do</url-pattern>
+	</servlet-mapping>
+<!-- gatEnd -->
+
+<!-- Foscare -->
+	<servlet>
+		<servlet-name>FoscareServlet</servlet-name>
+		<servlet-class>com.foscare.controller.FoscareServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FoscareServlet</servlet-name>
+		<url-pattern>/front-end/foscare/fos.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FosmServlet</servlet-name>
+		<servlet-class>com.fosm.controller.FosmServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FosmServlet</servlet-name>
+		<url-pattern>/front-end/foscare/fosm.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RepFosServlet</servlet-name>
+		<servlet-class>com.rep_fos.controller.RepFosServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RepFosServlet</servlet-name>
+		<url-pattern>/back-end/report/repfos.do</url-pattern>
+	</servlet-mapping>
+<!-- FoscareEnd -->	
+<!-- 	==================================商品開始=================================== -->
+	<servlet>
+		<servlet-name>Shop_productServlet</servlet-name>
+		<servlet-class>com.shop_product.controller.Shop_productServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Shop_productServlet</servlet-name>
+		<url-pattern>/front-end/shop/shop_product.do</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>Shop_venproductServlet</servlet-name>
+		<servlet-class>com.shop_product.controller.Shop_productServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Shop_venproductServlet</servlet-name>
+		<url-pattern>/front-end/vendor/shop_product.do</url-pattern>
+	</servlet-mapping>
+	
+<!-- 	==================================商品結束=================================== -->
+<!-- 	==========================訂單開始================================= -->
+	<servlet>
+		<servlet-name>Sprod_orderServlet</servlet-name>
+		<servlet-class>com.sprod_order.controller.Sprod_orderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Sprod_orderServlet</servlet-name>
+		<url-pattern>/front-end/shop/sprod_order.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Sprod_venorderServlet</servlet-name>
+		<servlet-class>com.sprod_order.controller.Sprod_orderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Sprod_venorderServlet</servlet-name>
+		<url-pattern>/front-end/vendor/sprod_order.do</url-pattern>
+	</servlet-mapping>
+<!-- 	==========================訂單結束================================= -->
+
+	 <servlet>
+		    <servlet-name>ShoppingServlet</servlet-name>
+		    <servlet-class>shopping.ShoppingServlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+		    <servlet-name>ShoppingServlet</servlet-name>
+		    <url-pattern>/front-end/shop/Shopping.html</url-pattern>
+	  </servlet-mapping>
+	
+	 <servlet>
+		    <servlet-name>Sprod_orderDetailServlet</servlet-name>
+		    <servlet-class>com.sprod_order.controller.Sprod_orderDetailServlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+		    <servlet-name>Sprod_orderDetailServlet</servlet-name>
+		    <url-pattern>/front-end/shop/sprod_orderDetail.do</url-pattern>
+	  </servlet-mapping>
+	  
+<!-- =====================================================商城爬蟲開始======================================================= -->
+	  <servlet>
+		    <servlet-name>ShopCrawelerController</servlet-name>
+		    <servlet-class>com.shopCrawler</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+		    <servlet-name>ShopCrawelerController</servlet-name>
+		    <url-pattern>/shopCrawler/shopCrawler.do</url-pattern>
+	  </servlet-mapping>
+
+
+<!-- =====================================================商城爬蟲結束======================================================= -->
+
+<!-- 二手市集開始 -->
+	<servlet>
+		<servlet-name>UprodServlet</servlet-name>
+		<servlet-class>com.uprod.controller.UprodServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UprodServlet</servlet-name>
+		<url-pattern>/front-end/uprod/uprod.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ShowPic</servlet-name>
+		<servlet-class>com.uprod.tools.ShowPic</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowPic</servlet-name>
+		<url-pattern>/front-end/uprod/showpic.do</url-pattern>
+	</servlet-mapping>
+<!-- 二手市集結束 -->
+
+
+<!-- ======討論區開始====== -->
+<!-- 討論區 -->
+	<servlet>
+		<servlet-name>ArticleServlet</servlet-name>
+		<servlet-class>com.article.controller.ArticleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ArticleServlet</servlet-name>
+		<url-pattern>/front-end/article/article.do</url-pattern>
+	</servlet-mapping>
+	
+<!-- 討論區：追蹤文章 -->
+	<servlet>
+		<servlet-name>FavArticleServlet</servlet-name>
+		<servlet-class>com.fav_article.controller.FavArticleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FavArticleServlet</servlet-name>
+		<url-pattern>/front-end/article/fav_article.do</url-pattern>
+	</servlet-mapping>
+	
+<!-- 討論區：檢舉文章 -->
+	<servlet>
+		<servlet-name>RepArticleServlet</servlet-name>
+		<servlet-class>com.rep_article.controller.RepArticleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RepArticleServlet</servlet-name>
+		<url-pattern>/back-end/report/rep_article.do</url-pattern>
+	</servlet-mapping>
+	
+<!-- 討論區：文章回覆 -->
+	<servlet>
+		<servlet-name>ArtResponseServlet</servlet-name>
+		<servlet-class>com.art_response.controller.ArtResponseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ArtResponseServlet</servlet-name>
+		<url-pattern>/front-end/article/art_response.do</url-pattern>
+	</servlet-mapping>
+	
+<!-- 討論區：檢舉文章回覆 -->
+	<servlet>
+		<servlet-name>RepResponseServlet</servlet-name>
+		<servlet-class>com.rep_response.controller.RepResponseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RepResponseServlet</servlet-name>
+		<url-pattern>/back-end/report/rep_response.do</url-pattern>
+	</servlet-mapping>
+<!-- ======討論區結束====== -->
+
+<!-- 遊戲房 -->
+
+	<servlet>
+		<servlet-name>drow.do</servlet-name>
+		<servlet-class>drow.DrowRoom</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>drow.do</servlet-name>
+		<url-pattern>/front-end/selfProject/Drow.do</url-pattern>
+	</servlet-mapping>
+<!-- 撲克區 -->
+	
+<!--工具類別 -->
+	
+	<servlet>
+  		<servlet-name>ShowPhotos</servlet-name>
+  		<servlet-class>com.tools.ShowPhotos</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+  		<servlet-name>ShowPhotos</servlet-name>
+  		<url-pattern>/front-end/ShowPhotos</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+		<servlet-name>JSONfosm</servlet-name>
+		<servlet-class>com.tools.JSONfosm</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JSONfosm</servlet-name>
+		<url-pattern>/front-end/foscare/JSONfosm</url-pattern>
+	</servlet-mapping>
+ 	
+<!--工具類別End -->
+<!--排程器 --> 
+	<servlet>
+		<servlet-name>ScheduleServlet</servlet-name>
+		<servlet-class>com.tools.ScheduleServlet</servlet-class>
+		<load-on-startup>8</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ScheduleServlet</servlet-name>
+		<url-pattern>/foscare/schedule</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ScheduleServlet_gat</servlet-name>
+		<servlet-class>com.tools.ScheduleServlet_gat</servlet-class>
+		<load-on-startup>8</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ScheduleServlet_gat</servlet-name>
+		<url-pattern>/gat/schedule</url-pattern>
+	</servlet-mapping>
+<!--排程器End --> 
+ 	
+<!--Filter -->
+	<!-- 找尋來源網頁濾器 -->
+	<filter>
+		<filter-name>GetURIFilter</filter-name>
+		<filter-class>filter.GetURIFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>GetURIFilter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+		
+	</filter-mapping>
+	
+	<!-- 登入濾器 -->
+	<filter>
+		<filter-name>LoginFilter</filter-name>
+		<filter-class>filter.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/front-end/mem/homeMem.jsp</url-pattern>
+		<url-pattern>/front-end/shop/Checkout.jsp</url-pattern>
+		<url-pattern>/front-end/shop/checkOutEnd.jsp</url-pattern>
+		<url-pattern>/front-end/shop/memListAllSprod_order.jsp</url-pattern>
+		<url-pattern>/front-end/foscare/fosmHome.jsp</url-pattern>
+		<url-pattern>/front-end/foscare/mreadfos.jsp</url-pattern>
+		<url-pattern>/front-end/foscare/addfos.jsp</url-pattern>
+		<url-pattern>/front-end/foscare/readfos.jsp</url-pattern>
+		<url-pattern>/front-end/foscare/updatefos.jsp</url-pattern>
+		<url-pattern>/front-end/uprod/uprod_manage.jsp</url-pattern>
+		<url-pattern>/front-end/uprod/uprod_customer.jsp</url-pattern>
+		<url-pattern>/front-end/uprod/uprod_add.jsp</url-pattern>
+		<url-pattern>/front-end/uprod/uprod_seller_detail.jsp</url-pattern>
+		
+		<dispatcher>REQUEST</dispatcher>
+	    <dispatcher>FORWARD</dispatcher>
+	    <dispatcher>INCLUDE</dispatcher>
+	    <dispatcher>ERROR</dispatcher>
+	    <dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+	<!-- 保母濾器 -->
+	<filter>
+		<filter-name>FosmFilter</filter-name>
+		<filter-class>filter.FosmFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>FosmFilter</filter-name>
+		<url-pattern>/front-end/foscare/fosmHome.jsp</url-pattern>
+		<url-pattern>/front-end/foscare/mreadfos.jsp</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	    <dispatcher>FORWARD</dispatcher>
+	    <dispatcher>INCLUDE</dispatcher>
+	    <dispatcher>ERROR</dispatcher>
+	    <dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+	<!-- 員工濾器 -->
+	<filter>
+		<filter-name>emploginFilter</filter-name>
+		<filter-class>EMPLOYEE.model.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>emploginFilter</filter-name>
+		<url-pattern>/back-end/emp/empmanage.jsp</url-pattern>
+		<url-pattern>/back-end/emp/qamanage.jsp</url-pattern>
+		<url-pattern>/back-end/emp/emppofile.jsp</url-pattern>
+		<url-pattern>/back-end/emp/annmanage.jsp</url-pattern>
+		<url-pattern>/back-end/emp/empbackindex.jsp</url-pattern>
+		<url-pattern>/back-end/emp/authoritymanage.jsp</url-pattern>
+		<url-pattern>/back-end/emp/memmanage.jsp</url-pattern>
+		<url-pattern>/back-end/emp/venmanage.jsp</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+	
+	
+<!--FilterEnd -->
+	
+</web-app>

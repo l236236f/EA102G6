@@ -1,0 +1,103 @@
+#qacontainer h1{
+position:relative;
+width:750px;
+font-family:Microsoft JhengHei !important;
+
+border:white 1px solid;
+border-radius:20px;
+padding:20px;
+padding-bottom:0px;
+ -webkit-box-shadow: 0 0 5px rgba(0,113,241,1);
+text-align:right;
+margin-bottom:30px;
+height:200px;
+}
+
+#qacontainer p{
+	margin-top:130px;
+color:#0080c0;
+}
+
+#qacontainer {
+	top:100px;
+	position: relative;
+	display: flex;
+	background-color: white;
+	width: 100%;
+	height: 700px;
+	flex-direction: column;
+	align-items: center;
+}
+
+#qacontainer div {
+	display: flex;
+}
+
+#qacontainer .optionBox {
+	background-color: white;
+	width: 960px;
+	height: 250px;
+	justify-content: center;
+}
+
+#qacontainer .textBox {
+	display:flex;
+	background-color: white;
+	width: 960px;
+	height: 200px;
+	justify-content:center;
+	align-items:center;
+}
+.textBox .qatext{
+visibility:hidden;
+border-radius:20px;
+background-color:#ffff80;
+width:80%;
+height:80%;	
+word-break: break-all;
+word-wrap: break-word;	
+padding:20px;
+}
+#qacontainer li:hover{
+	
+background-color:#ff8040;
+cursor:pointer;
+}
+#qacontainer .onActive{
+	background-color:#ff8040;
+}
+
+
+
+
+.optionBox ul {
+	padding-top:20px;
+	width: 150px;
+	margin: 5px 50px;
+	border: 1px dashed #ff8040;
+	overflow:auto;
+	
+}
+
+.optionBox li {
+	list-style-type:none;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.optionBox li:hover{
+	
+}
+
+.after-sign {
+	display:flex;
+	display: block;
+	align-self:center;
+	font-size:60px;
+	color:#8080ff;
+}
+
+
+
+
+
+

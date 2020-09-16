@@ -1,0 +1,91 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="Big5"%>
+
+<!-- Sidebar -->
+		<ul	class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+			<!-- Sidebar - Brand -->
+			<a class="sidebar-brand d-flex align-items-center justify-content-center" href="empbackindex.jsp">
+				<div class="sidebar-brand-icon rotate-n-15">
+					<i class="fas fa-laugh-wink"></i>
+				</div>
+				<div class="sidebar-brand-text mx-3">後台管理系統</div>
+			</a>
+			<hr class="sidebar-divider my-0">
+			<hr class="sidebar-divider">
+
+			<!-- Heading -->
+			<div class="sidebar-heading">選單列表</div>
+			<li class="nav-item">
+				<a class="nav-link"	href="empmanage.jsp"> 
+					<i class="fas fa-fw fa-table"></i> 
+					<span>員工管理</span>
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="authoritymanage.jsp">
+					<i class="fas fa-fw fa-chart-area"></i> <span>權限管理</span>
+				</a>
+			</li>
+			
+			<!-- Nav Item - Pages Collapse Menu -->
+			<li class="nav-item">
+				<a class="nav-link collapsed" href="#"
+					data-toggle="collapse" data-target="#collapseOne"
+					aria-expanded="true" aria-controls="collapseOne"> 
+					<i class="fas fa-fw fa-table"></i> 
+					<span>檢舉審核</span>
+				</a>
+				<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+					 data-parent="#accordionSidebar">
+					<div class="bg-white py-2 collapse-inner rounded">
+						<h6 class="collapse-header">檢舉審核</h6>
+						<a class="collapse-item" href="report_fos.jsp">寄養檢舉審核</a> 
+						<a class="collapse-item" href="report_sprod.jsp">商城檢舉審核</a> 
+						<a class="collapse-item" href="report_uprod.jsp">二手檢舉審核</a> 
+						<a class="collapse-item" href="report_gat.jsp">揪團檢舉審核</a> 
+						<a class="collapse-item" href="report_article.jsp">文章檢舉審核</a> 
+					</div>
+				</div>
+			</li>
+			<li class="nav-item "><a class="nav-link collapsed" href="#"
+				data-toggle="collapse" data-target="#collapseTwo"
+				aria-expanded="true" aria-controls="collapseTwo"> 
+				<i class="fas fa-fw fa-table"></i> 
+				<span>前台管理</span>
+			</a>
+				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+					data-parent="#accordionSidebar">
+					<div class="bg-white py-2 collapse-inner rounded">
+						<h6 class="collapse-header">Q&A</h6>
+						<a class="collapse-item" href="qamanage.jsp">Q&A</a>
+						<h6 class="collapse-header">最新消息</h6>
+						<a class="collapse-item" href="annmanage.jsp">網站公告</a> 
+					</div>
+				</div></li>
+
+			<li class="nav-item">
+				<a class="nav-link collapsed" href="#"
+					data-toggle="collapse" data-target="#collapseThree"
+					aria-expanded="true" aria-controls="collapseThree">
+					<i class="fas fa-fw fa-table"></i>
+					<span>基本資料管理</span>
+				</a>
+				<div id="collapseThree" class="collapse"
+					 aria-labelledby="headingThree" data-parent="#accordionSidebar">
+					<div class="bg-white py-2 collapse-inner rounded">
+						<h6 class="collapse-header">會員</h6>
+						<a class="collapse-item" href="memmanage.jsp">會員資料修改</a>
+						<h6 class="collapse-header">廠商</h6>
+						<a class="collapse-item" href="venmanage.jsp">廠商資料修改</a>
+					
+					</div>
+				</div></li>
+
+			<hr class="sidebar-divider d-none d-md-block">
+
+			<!-- Sidebar Toggler (Sidebar) -->
+			<div class="text-center d-none d-md-inline">
+				<button class="rounded-circle border-0" id="sidebarToggle"></button>
+			</div>
+
+		</ul>

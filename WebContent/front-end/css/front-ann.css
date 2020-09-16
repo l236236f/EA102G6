@@ -1,0 +1,64 @@
+
+
+#anncontainer {
+	position: relative;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+
+#anncontainer div {
+	display: flex;
+}
+
+.annBox{
+display:flex;
+height:auto;
+width:955px;
+flex-direction:column;
+align-items: center;
+}
+.annBoxheader{
+	margin-top:100px;
+	font-size:45px;
+	width:calc(100% - 40px);
+	color:#008080;
+	margin-bottom:20px;
+}
+.anntablebox{
+	width:calc(100% - 100px);
+	height:auto;
+	background-color: white;
+	align-self:flex-end;
+}
+
+.tr-ann{
+	width:100%;
+	border:2px dashed #ff8000;
+	max-height:150px;
+}
+.td-1{
+	width:300px;
+	
+}
+.td-1 img{
+	width:80%;
+	margin-left:10%;
+	
+}
+.td-2{
+	width:650px;
+	
+}
+.textdiv{
+	max-width:600px;
+	height:140px;
+  	overflow : hidden;
+  	word-break: break-all;
+}
+.page{
+	display:flex;
+	align-self:flex-end;
+	
+}
